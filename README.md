@@ -18,12 +18,6 @@ A hands-on identity administration lab simulating employee onboarding, group mem
 
 > **Scope:** This lab demonstrates identity lifecycle operations. It does not configure application authorization, Microsoft 365 licensing, Conditional Access policies, or Intune device management. Group membership alone does not grant application access.
 
-## Architecture
-
-![Conceptual identity lifecycle diagram](diagrams/architecture.png)
-
-The administrator manages a fictional restaurant employee identity in Microsoft Entra ID. The employee is initially a member of `Store-001-Managers`. During offboarding, the administrator disables the account, revokes sign-in sessions, and removes the group membership.
-
 ## Procedure and evidence
 
 ### 1. Provision employee account
@@ -47,17 +41,6 @@ Disabled Sarah's account, revoked her sign-in sessions, removed her from `Store-
 ![Disabled account evidence](screenshots/05-account-disabled.png)
 
 ![Membership removal evidence](screenshots/06-group-membership-removed.png)
-
-## Verification
-| Check | Result |
-| --- | --- |
-| Employee user created | Completed |
-| Security group created | Completed |
-| Employee added to group | Completed |
-| Employee account disabled | Completed |
-| Sign-in sessions revoked | Completed |
-| Employee removed from group | Completed |
-| Membership removal verified | Completed |
 
 ## Key takeaways
 - Microsoft Entra ID provides centralized cloud identity administration.
